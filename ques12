@@ -1,0 +1,30 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int size;
+    cout << "Enter the size of the arrays: ";
+    cin >> size;
+
+    int array1[size], array2[size], sumArray[size];
+
+    cout << "Enter elements of the first array: ";
+    for (int i = 0; i < size; i++) {
+        cin >> array1[i];
+    }
+
+    cout << "Enter elements of the second array: ";
+    for (int i = 0; i < size; i++) {
+        cin >> array2[i];
+    }
+
+    cout << "Sum of corresponding elements: ";
+    for (int i = 0; i < size; i++) {
+        sumArray[i] = array1[i] + array2[i];
+        cout << sumArray[i] << " ";
+    }
+    
+    cout << endl;
+
+    return 0;
+}
