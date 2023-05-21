@@ -1,0 +1,23 @@
+#include <iostream>
+
+int main() {
+    int N;
+    std::cout << "Enter the number of terms in the Fibonacci series: ";
+    std::cin >> N;
+
+    int num1 = 0;
+    int num2 = 1;
+    int nextTerm;
+
+    std::cout << "Fibonacci series: ";
+
+    for (int i = 1; i <= N; ++i) {
+        std::cout << num1 << " ";
+
+        nextTerm = num1 + num2;
+        num1 = num2;
+        num2 = nextTerm;
+    }
+
+    return 0;
+}
