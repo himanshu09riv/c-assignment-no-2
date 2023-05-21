@@ -1,0 +1,12 @@
+#include<iosstream>
+int main(){
+int numbers;
+std::cout<<"Enter a positive integer";
+std::cin>>number;
+int sum=0;
+for(int i=1;i<=number;++i){
+sum+=i;
+}
+std::cout<<"The sum of all numbers upto"<<number<<"is"<<sum<<std::endl;
+return 0;
+}
